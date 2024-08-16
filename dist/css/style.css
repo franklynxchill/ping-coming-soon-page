@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 170vh;
+}
+
+.container {
+  width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3.5rem;
+  text-align: center;
+}
+@media (width > 45em) {
+  .container {
+    width: 40rem;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 59%);
+  margin: 1rem 0 1rem;
+}
+@media (width > 45em) {
+  h1 {
+    font-size: 3rem;
+    margin: 1rem 0 0.3rem;
+  }
+}
+
+h1 span {
+  color: hsl(209, 33%, 12%);
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media (width > 45em) {
+  form {
+    gap: 0.6rem;
+    flex-direction: row;
+  }
+}
+
+form input {
+  border-radius: 15rem;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+@media (width > 45em) {
+  form input {
+    width: 26rem;
+  }
+}
+
+form span {
+  color: red;
+  font-style: italic;
+  position: absolute;
+  display: none;
+}
+@media (width > 45em) {
+  form span {
+    left: 1.5rem;
+    top: 3rem;
+  }
+}
+
+form button {
+  border-radius: 15rem;
+  outline: none;
+  border: none;
+  padding: 0.9rem 2rem;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+@media (width > 45em) {
+  form button {
+    width: 10rem;
+  }
+}
+form button:hover {
+  background-color: hsl(223, 100%, 88%);
+}
+
+.dashboard-img img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.social-icon .circle:first-child {
+  padding: 0.7rem 1rem;
+}
+.social-icon .circle {
+  border-radius: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid hsl(0, 0%, 59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease-in 0.25s;
+}
+.social-icon .circle:hover {
+  background-color: blue;
+}
+.social-icon i {
+  color: blue;
+  font-size: 1.4rem;
+}
+.social-icon i:hover {
+  color: white;
+}
+
+.social-icon + span {
+  font-size: 1.1rem;
+}
+
+.attribution {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

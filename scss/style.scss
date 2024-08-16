@@ -1,0 +1,150 @@
+@import './config';
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 170vh;
+}
+
+.container {
+  width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3.5rem;
+  text-align: center;
+  @media (width > 45em) {
+    width: 40rem;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $gray;
+  margin: 1rem 0 1rem;
+  @media (width > 45em) {
+    font-size: 3rem;
+    margin: 1rem 0 .3rem;
+  }
+}
+
+h1 span {
+  color: $very-darkBlue;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @media (width > 45em) {
+    gap: .6rem;
+    flex-direction: row;
+  }
+}
+
+form input {
+  border-radius: 15rem;
+  outline: none;
+  padding: .8rem 1.5rem;
+  width: 100%;
+  border: 1px solid $gray;
+  @media (width > 45em) {
+    width: 26rem;
+  }
+}
+
+form span {
+  color: red;
+  font-style: italic;
+  position: absolute;
+  display: none;
+  @media (width > 45em) {
+    left: 1.5rem;
+    top: 3rem;
+  }
+}
+
+form button {
+  border-radius: 15rem;
+  outline: none;
+  border: none;
+  padding: .9rem 2rem;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  @media (width > 45em) {
+    width: 10rem;
+  }
+  &:hover {
+    background-color: $pale-blue;
+  }
+}
+
+
+.dashboard-img img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  column-gap: 1rem;
+
+  .circle:first-child {
+    padding: .7rem 1rem;
+  }
+
+  .circle {
+    border-radius: 100%;
+    padding: .7rem .8rem;
+    border: 1px solid $gray; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-in .25s;
+    &:hover {
+      background-color: blue;
+    }
+  }
+
+  i {
+    color: blue;
+    font-size: 1.4rem;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.social-icon + span {
+  font-size: 1.1rem;
+}
+
+.attribution { 
+  text-align: center; 
+  margin: 2rem 0;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
